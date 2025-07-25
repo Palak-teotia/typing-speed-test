@@ -83,10 +83,11 @@ int main() {
     char easy_para[] = "Typing is a basic skill that helps us use computers and phones faster. When we type quickly, we can finish our work in less time. Practicing daily can make our typing better. Make sure to sit straight, relax your fingers, and focus on the screen.";
 
     char inter_para[] = "In today's digital world, typing is not just a skill but a necessity. Students, professionals, and even content creators rely on fast and accurate typing to increase their productivity. Consistent practice not only improves speed but also builds confidence while using a keyboard.";
-
+     
+    char hard_para[] = "Efficient typing demands precision, rhythm, and mental coordination. As technology evolves, the ability to communicate swiftly through written text becomes increasingly vital. Mastery over typing reduces cognitive load, allowing individuals to focus more on the quality of their content rather than the mechanics of writing.";
 
     printf("\n===== TYPING SPEED TEST - SELECT YOUR LEVEL =====\n");
-    printf("(a) EASY LEVEL\n(b) INTERMEDIATE LEVEL\n");
+    printf("(a) EASY LEVEL\n(b) INTERMEDIATE LEVEL\n(c) DIFFICULT LEVEL\n");
     printf("Enter your choice: ");
     scanf(" %c", &user_input);  // Space before %c to skip newline
     while(getchar() != '\n'); // clear input buffer
@@ -94,10 +95,16 @@ int main() {
     if(user_input == 'a' || user_input == 'A') {
         printf("\n===== YOU SELECTED EASY LEVEL =====\n");
         run_test(easy_para);
-    } else if(user_input == 'b' || user_input == 'B') {
+    } 
+    else if(user_input == 'b' || user_input == 'B') {
         printf("\n===== YOU SELECTED INTERMEDIATE LEVEL =====\n");
         run_test(inter_para);
-    } else {
+    } 
+    else if(user_input == 'c' || user_input == 'C') {
+        printf("\n===== YOU SELECTED DIFFICULT LEVEL =====\n");
+        run_test(hard_para);
+    } 
+    else {
         printf("Invalid selection.\n");
     }
 
