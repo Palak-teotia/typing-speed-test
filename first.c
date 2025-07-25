@@ -82,7 +82,26 @@ int main() {
     printf("Accuracy:\t\t%.2f%%\n", accuracy);
     printf("Typing Speed:\t\t%.2f WPM\n", wpm);
 
-   
+    if(wpm >= 40 && wpm < 50 ){
+        printf("\n======  NOT BAD BUT DO PRACTICE....=======");
+    }
+
+    else if(wpm >= 50 && wpm < 70 ){
+        printf("\n======= NICE!!  =========");
+    }
+
+    else if(wpm >=70 && wpm < 80 ){
+        printf("\n====== GOOD!! =======");
+    }
+
+    else if(wpm >= 80) {
+    printf("\n====== EXCELLENT!! =========");
+    }
+
+
+    else {
+        printf("\n ======= YOU NEED TO PRACTICE DAILY TO IMPROVE YOUR TYPING SPEED ... =======");
+    }
 
     return 0;
 }
